@@ -1,0 +1,68 @@
+@use '../index.scss' as index;
+
+input {
+  height: 44px;
+}
+
+input[type="text"],
+input[type="password"] {
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  padding: 2px;
+}
+
+input[type="submit"] {
+  margin-top: 10px;
+  cursor: pointer;
+  font-size: 15px;
+  background: index.$primary;
+  border: 1px solid index.$primary;
+  border-radius: 4px;
+  color: #fff;
+  padding: 10px 20px;
+}
+
+input[type="submit"]:hover {
+  background: index.$primary;
+  opacity: 70%;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+}
+
+.login-form {
+  border-radius: 10px;
+  background-color: white;
+  margin: 15% 30%;
+  padding: 2rem;
+  box-shadow: 0 4px 8px 0 rgba(227, 19, 19, 0.2), 0 6px 20px 0 rgba(245, 13, 13, 0.19);
+}
+
+.list-container {
+  display: flex;
+}
+
+.error {
+  color: red;
+  font-size: 12px;
+}
+
+.title {
+  font-size: 25px;
+  margin-bottom: 20px;
+}
+
+.input-container {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin: 20px;
+}
+
+@media only screen and (max-width: 450px) {
+  .login-form {
+    margin: 10%;
+  }
+}

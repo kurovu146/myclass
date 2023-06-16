@@ -1,0 +1,21 @@
+@use '../index.scss' as index;
+
+.header {
+  display: flex;
+  height: index.$header-height;
+  background-color: index.$primary;
+  justify-content: space-between;
+}
+
+.notification,
+.option,
+.logo {
+  height: index.$header-height;
+  width: index.$header-height;
+  cursor: pointer;
+  margin: 0;
+}
+
+.notification {
+  padding: 10px;
+}

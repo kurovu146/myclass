@@ -1,0 +1,52 @@
+@use '../index.scss' as index;
+
+.profile {
+  width: 100%;
+  border: 1px solid index.$primary;
+  margin: -1px 0 0 0;
+}
+
+.wrapper {
+  display: flex;
+  width: 100vw;
+  padding: 5px;
+}
+
+.description {
+  width: 100%;
+
+  .main-info {
+    display: flex;
+  }
+}
+
+.avatar {
+  width: 30%; 
+  margin: auto;
+  padding-right: 5px;
+
+  img {
+    // height: 200px !important;
+    object-fit: cover;
+  }
+}
+
+.edit {
+  padding: 5px;
+  height: 32px;
+  cursor: pointer;
+}
+
+.sub-info {
+  padding: 5px;
+}
+
+@media only screen and (max-width: 450px) {
+  .avatar {
+    width: 50%;
+  }
+
+  .wrapper {
+    display: block;
+  }
+}

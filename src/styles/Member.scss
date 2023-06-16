@@ -1,0 +1,22 @@
+.title {
+  text-align: center;
+}
+
+.wrapper-member {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  justify-items: center;
+}
+
+.member {
+  padding-bottom: 20px;
+}
+
+@media only screen and (max-width: 450px) {
+  .member {
+    font-size: 12px;
+  }
+
+  .wrapper-member {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
